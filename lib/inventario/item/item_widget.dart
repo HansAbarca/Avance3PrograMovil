@@ -6,16 +6,11 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/inventario/carrito/carrito_widget.dart';
 import '/inventario/seguro_eliminar_item/seguro_eliminar_item_widget.dart';
-import 'dart:math';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import 'item_model.dart';
 export 'item_model.dart';
@@ -77,9 +72,9 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
         parent: currentUserReference,
       );
       while (FFAppState().contador < _model.carritoCantidad!) {
-        if (_model.carroDatos?[FFAppState().contador]?.itemInventario
-                ?.referenciaItem ==
-            widget!.referenciaItem) {
+        if (_model.carroDatos?[FFAppState().contador].itemInventario
+                .referenciaItem ==
+            widget.referenciaItem) {
           _model.siEstaEnCarrito = true;
           setState(() {});
         }
@@ -88,26 +83,26 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
       }
     });
 
-    _model.textController1 ??= TextEditingController(text: widget!.nombre);
+    _model.textController1 ??= TextEditingController(text: widget.nombre);
     _model.textFieldFocusNode1 ??= FocusNode();
 
-    _model.textController2 ??= TextEditingController(text: widget!.descripcion);
+    _model.textController2 ??= TextEditingController(text: widget.descripcion);
     _model.textFieldFocusNode2 ??= FocusNode();
 
     _model.cantidadPCTextController ??=
-        TextEditingController(text: widget!.cantidad?.toString());
+        TextEditingController(text: widget.cantidad?.toString());
     _model.cantidadPCFocusNode ??= FocusNode();
 
     _model.precioPCTextController ??=
-        TextEditingController(text: widget!.precio?.toString());
+        TextEditingController(text: widget.precio?.toString());
     _model.precioPCFocusNode ??= FocusNode();
 
     _model.cantidadMovilTextController ??=
-        TextEditingController(text: widget!.cantidad?.toString());
+        TextEditingController(text: widget.cantidad?.toString());
     _model.cantidadMovilFocusNode ??= FocusNode();
 
     _model.precioMovilTextController ??=
-        TextEditingController(text: widget!.precio?.toString());
+        TextEditingController(text: widget.precio?.toString());
     _model.precioMovilFocusNode ??= FocusNode();
 
     animationsMap.addAll({
@@ -248,7 +243,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
       child: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0xFFE8E8F4),
           borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(40.0),
@@ -267,18 +262,18 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                     if (FFAppState().ModoEdicionItems == false)
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     60.0, 0.0, 60.0, 0.0),
                                 child: Text(
                                   valueOrDefault<String>(
-                                    widget!.nombre,
+                                    widget.nombre,
                                     'Error!',
                                   ),
                                   textAlign: TextAlign.center,
@@ -315,14 +310,14 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                     if (FFAppState().ModoEdicionItems == true)
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     60.0, 0.0, 60.0, 0.0),
                                 child: TextFormField(
                                   controller: _model.textController1,
@@ -386,7 +381,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 15.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 15.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.end,
@@ -401,7 +396,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                               setState(() {});
                               Navigator.pop(context);
                             },
-                            child: Icon(
+                            child: const Icon(
                               Icons.clear,
                               color: Colors.black,
                               size: 40.0,
@@ -412,7 +407,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 0.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -421,7 +416,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                   'Admin') &&
                               (FFAppState().ModoEdicionItems == false))
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0,
@@ -463,7 +458,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                             padding: MediaQuery.viewInsetsOf(
                                                 context),
                                             child: SeguroEliminarItemWidget(
-                                              item: widget!.referenciaItem!,
+                                              item: widget.referenciaItem!,
                                             ),
                                           );
                                         },
@@ -471,7 +466,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                     },
                                     child: Icon(
                                       Icons.delete_forever,
-                                      color: Color(0xFFFF0000),
+                                      color: const Color(0xFFFF0000),
                                       size: () {
                                         if (MediaQuery.sizeOf(context).width <
                                             kBreakpointSmall) {
@@ -497,7 +492,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                   'Admin') &&
                               (FFAppState().ModoEdicionItems == true))
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0,
@@ -562,7 +557,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                     Expanded(
                       child: Text(
                         valueOrDefault<String>(
-                          widget!.categoria,
+                          widget.categoria,
                           'Error!',
                         ),
                         textAlign: TextAlign.center,
@@ -588,7 +583,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                       children: [
                         if (FFAppState().ModoEdicionItems == false)
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 20.0, 0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -596,7 +591,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                 Expanded(
                                   child: Text(
                                     valueOrDefault<String>(
-                                      widget!.descripcion,
+                                      widget.descripcion,
                                       'Error!',
                                     ),
                                     textAlign: TextAlign.center,
@@ -613,7 +608,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                           ),
                         if (FFAppState().ModoEdicionItems == true)
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 20.0, 0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -680,7 +675,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(50.0),
                                 bottomRight: Radius.circular(50.0),
@@ -689,7 +684,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   10.0, 10.0, 10.0, 10.0),
                               child: InkWell(
                                 splashColor: Colors.transparent,
@@ -703,23 +698,23 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                       type: PageTransitionType.fade,
                                       child: FlutterFlowExpandedImageView(
                                         image: Image.network(
-                                          widget!.imagen!,
+                                          widget.imagen!,
                                           fit: BoxFit.contain,
                                         ),
                                         allowRotation: false,
-                                        tag: widget!.imagen!,
+                                        tag: widget.imagen!,
                                         useHeroAnimation: true,
                                       ),
                                     ),
                                   );
                                 },
                                 child: Hero(
-                                  tag: widget!.imagen!,
+                                  tag: widget.imagen!,
                                   transitionOnUserGestures: true,
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(24.0),
                                     child: Image.network(
-                                      widget!.imagen!,
+                                      widget.imagen!,
                                       width: () {
                                         if (MediaQuery.sizeOf(context).width <
                                             kBreakpointSmall) {
@@ -779,7 +774,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(50.0),
                                 bottomRight: Radius.circular(50.0),
@@ -788,7 +783,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   10.0, 10.0, 10.0, 10.0),
                               child: InkWell(
                                 splashColor: Colors.transparent,
@@ -802,23 +797,23 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                       type: PageTransitionType.fade,
                                       child: FlutterFlowExpandedImageView(
                                         image: Image.network(
-                                          widget!.imagen!,
+                                          widget.imagen!,
                                           fit: BoxFit.contain,
                                         ),
                                         allowRotation: false,
-                                        tag: widget!.imagen!,
+                                        tag: widget.imagen!,
                                         useHeroAnimation: true,
                                       ),
                                     ),
                                   );
                                 },
                                 child: Hero(
-                                  tag: widget!.imagen!,
+                                  tag: widget.imagen!,
                                   transitionOnUserGestures: true,
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(24.0),
                                     child: Image.network(
-                                      widget!.imagen!,
+                                      widget.imagen!,
                                       width: () {
                                         if (MediaQuery.sizeOf(context).width <
                                             kBreakpointSmall) {
@@ -864,7 +859,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Stack(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   children: [
                                     Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -878,7 +873,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           20.0, 0.0, 0.0, 0.0),
                                                   child: Row(
@@ -927,7 +922,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  boxShadow: [
+                                                                  boxShadow: const [
                                                                     BoxShadow(
                                                                       blurRadius:
                                                                           4.0,
@@ -941,7 +936,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                                                     )
                                                                   ],
                                                                   borderRadius:
-                                                                      BorderRadius
+                                                                      const BorderRadius
                                                                           .only(
                                                                     bottomLeft:
                                                                         Radius.circular(
@@ -959,7 +954,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                                                 ),
                                                                 child: Stack(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   children: [
@@ -974,7 +969,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                                                         children: [
                                                                           Text(
                                                                             valueOrDefault<String>(
-                                                                              widget!.cantidad?.toString(),
+                                                                              widget.cantidad?.toString(),
                                                                               'Error!',
                                                                             ),
                                                                             style: FlutterFlowTheme.of(context).headlineMedium.override(
@@ -997,7 +992,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                                                           Expanded(
                                                                             child:
                                                                                 Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
                                                                               child: TextFormField(
                                                                                 controller: _model.cantidadPCTextController,
                                                                                 focusNode: _model.cantidadPCFocusNode,
@@ -1035,7 +1030,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                                               ),
                                                             ],
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             height: 10.0)),
                                                       ),
                                                     ],
@@ -1058,7 +1053,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                                     child: Text(
                                                       'Precio: ₡ ${valueOrDefault<String>(
                                                         formatNumber(
-                                                          widget!.precio,
+                                                          widget.precio,
                                                           formatType: FormatType
                                                               .decimal,
                                                           decimalType:
@@ -1091,7 +1086,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   8.0,
                                                                   0.0,
@@ -1167,14 +1162,14 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                               ),
                                           ],
                                         ),
-                                      ].divide(SizedBox(height: 20.0)),
+                                      ].divide(const SizedBox(height: 20.0)),
                                     ),
                                   ],
                                 ),
                               ],
                             ),
                           ),
-                        ].addToStart(SizedBox(width: 100.0)),
+                        ].addToStart(const SizedBox(width: 100.0)),
                       ),
                     if (() {
                       if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
@@ -1199,7 +1194,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Stack(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   children: [
                                     Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -1213,7 +1208,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           20.0, 0.0, 0.0, 0.0),
                                                   child: Row(
@@ -1262,7 +1257,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  boxShadow: [
+                                                                  boxShadow: const [
                                                                     BoxShadow(
                                                                       blurRadius:
                                                                           4.0,
@@ -1276,7 +1271,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                                                     )
                                                                   ],
                                                                   borderRadius:
-                                                                      BorderRadius
+                                                                      const BorderRadius
                                                                           .only(
                                                                     bottomLeft:
                                                                         Radius.circular(
@@ -1294,7 +1289,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                                                 ),
                                                                 child: Stack(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   children: [
@@ -1309,7 +1304,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                                                         children: [
                                                                           Text(
                                                                             valueOrDefault<String>(
-                                                                              widget!.cantidad?.toString(),
+                                                                              widget.cantidad?.toString(),
                                                                               'Error!',
                                                                             ),
                                                                             style: FlutterFlowTheme.of(context).headlineMedium.override(
@@ -1332,7 +1327,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                                                           Expanded(
                                                                             child:
                                                                                 Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
                                                                               child: TextFormField(
                                                                                 controller: _model.cantidadMovilTextController,
                                                                                 focusNode: _model.cantidadMovilFocusNode,
@@ -1370,7 +1365,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                                               ),
                                                             ],
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             height: 10.0)),
                                                       ),
                                                     ],
@@ -1393,7 +1388,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                                     child: Text(
                                                       'Precio: ₡ ${valueOrDefault<String>(
                                                         formatNumber(
-                                                          widget!.precio,
+                                                          widget.precio,
                                                           formatType: FormatType
                                                               .decimal,
                                                           decimalType:
@@ -1426,7 +1421,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   8.0,
                                                                   0.0,
@@ -1502,7 +1497,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                               ),
                                           ],
                                         ),
-                                      ].divide(SizedBox(height: 20.0)),
+                                      ].divide(const SizedBox(height: 20.0)),
                                     ),
                                   ],
                                 ),
@@ -1588,7 +1583,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                             return 124.0;
                                           }
                                         }(),
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           color: Color(0xFF00B821),
                                           borderRadius: BorderRadius.only(
                                             bottomLeft: Radius.circular(50.0),
@@ -1724,7 +1719,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                                 padding:
                                                     MediaQuery.viewInsetsOf(
                                                         context),
-                                                child: CarritoWidget(),
+                                                child: const CarritoWidget(),
                                               );
                                             },
                                           ).then(
@@ -1754,7 +1749,7 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .primary,
-                                            borderRadius: BorderRadius.only(
+                                            borderRadius: const BorderRadius.only(
                                               bottomLeft: Radius.circular(50.0),
                                               bottomRight:
                                                   Radius.circular(50.0),
@@ -1838,8 +1833,8 @@ class _ItemWidgetState extends State<ItemWidget> with TickerProviderStateMixin {
                       ],
                     ),
                   ]
-                      .divide(SizedBox(height: 20.0))
-                      .addToEnd(SizedBox(height: 30.0)),
+                      .divide(const SizedBox(height: 20.0))
+                      .addToEnd(const SizedBox(height: 30.0)),
                 ),
               ),
             ),

@@ -5,20 +5,15 @@ import '/flutter_flow/flutter_flow_choice_chips.dart';
 import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/inventario/ajustes/ajustes_widget.dart';
 import '/inventario/anadir_inventario/anadir_inventario_widget.dart';
 import '/inventario/carrito/carrito_widget.dart';
 import '/inventario/item/item_widget.dart';
 import '/inventario/opciones/opciones_widget.dart';
-import 'dart:math';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import 'package:text_search/text_search.dart';
 import 'inventario_model.dart';
@@ -96,7 +91,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                   width: double.infinity,
                   height: double.infinity,
                   decoration: BoxDecoration(
-                    color: Color(0x00FFFFFF),
+                    color: const Color(0x00FFFFFF),
                     image: DecorationImage(
                       fit: BoxFit.cover,
                       image: Image.asset(
@@ -107,14 +102,14 @@ class _InventarioWidgetState extends State<InventarioWidget>
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Stack(
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               20.0, 0.0, 20.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -170,7 +165,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                 child: Container(
                                   width: 84.0,
                                   height: 80.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0x00FFFFFF),
                                   ),
                                   child: Column(
@@ -182,14 +177,14 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                             MainAxisAlignment.center,
                                         children: [
                                           if (FFAppState().CambiarOrden == true)
-                                            Icon(
+                                            const Icon(
                                               Icons.trending_up,
                                               color: Colors.white,
                                               size: 60.0,
                                             ),
                                           if (FFAppState().CambiarOrden ==
                                               false)
-                                            Icon(
+                                            const Icon(
                                               Icons.trending_down,
                                               color: Colors.white,
                                               size: 60.0,
@@ -277,7 +272,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                             child: Padding(
                                               padding: MediaQuery.viewInsetsOf(
                                                   context),
-                                              child: AjustesWidget(),
+                                              child: const AjustesWidget(),
                                             ),
                                           );
                                         },
@@ -286,13 +281,13 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                     child: Container(
                                       width: 84.0,
                                       height: 80.0,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         color: Color(0x00FFFFFF),
                                       ),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
-                                          Row(
+                                          const Row(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
@@ -358,7 +353,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                             child: Padding(
                                               padding: MediaQuery.viewInsetsOf(
                                                   context),
-                                              child: AnadirInventarioWidget(),
+                                              child: const AnadirInventarioWidget(),
                                             ),
                                           );
                                         },
@@ -367,13 +362,13 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                     child: Container(
                                       width: 84.0,
                                       height: 80.0,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         color: Color(0x00FFFFFF),
                                       ),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
-                                          Row(
+                                          const Row(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
@@ -410,7 +405,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                   ),
                                 ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 50.0, 0.0),
                                 child: InkWell(
                                   splashColor: Colors.transparent,
@@ -435,7 +430,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                           child: Padding(
                                             padding: MediaQuery.viewInsetsOf(
                                                 context),
-                                            child: CarritoWidget(),
+                                            child: const CarritoWidget(),
                                           ),
                                         );
                                       },
@@ -444,13 +439,13 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                   child: Container(
                                     width: 84.0,
                                     height: 80.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0x00FFFFFF),
                                     ),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
-                                        Row(
+                                        const Row(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
@@ -486,7 +481,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                   ),
                                 ),
                               ),
-                            ].divide(SizedBox(width: 30.0)),
+                            ].divide(const SizedBox(width: 30.0)),
                           ),
                         if (() {
                           if (MediaQuery.sizeOf(context).width <
@@ -508,7 +503,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                             children: [
                               if (FFAppState().botonOpcionesVisivilidad)
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 25.0, 5.0, 0.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
@@ -536,13 +531,13 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                             child: Padding(
                                               padding: MediaQuery.viewInsetsOf(
                                                   context),
-                                              child: OpcionesWidget(),
+                                              child: const OpcionesWidget(),
                                             ),
                                           );
                                         },
                                       ).then((value) => safeSetState(() {}));
                                     },
-                                    child: Icon(
+                                    child: const Icon(
                                       Icons.keyboard_double_arrow_left_outlined,
                                       color: Colors.white,
                                       size: 40.0,
@@ -553,14 +548,14 @@ class _InventarioWidgetState extends State<InventarioWidget>
                             ],
                           ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               25.0, 25.0, 0.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: InkWell(
                                   splashColor: Colors.transparent,
                                   focusColor: Colors.transparent,
@@ -569,7 +564,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                   onTap: () async {
                                     context.pushNamed('Home');
                                   },
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.arrow_back_ios_rounded,
                                     color: Colors.white,
                                     size: 40.0,
@@ -640,7 +635,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                       borderRadius: BorderRadius.circular(50.0),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 0.0, 10.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -653,7 +648,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                           ),
                                           Expanded(
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(8.0, 0.0, 8.0, 0.0),
                                               child: TextFormField(
                                                 controller:
@@ -663,7 +658,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                 onChanged: (_) =>
                                                     EasyDebounce.debounce(
                                                   '_model.textController',
-                                                  Duration(milliseconds: 50),
+                                                  const Duration(milliseconds: 50),
                                                   () async {
                                                     if (_model.textController
                                                             .text ==
@@ -683,7 +678,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                             record,
                                                                             [
                                                                           record
-                                                                              .nombre!
+                                                                              .nombre
                                                                         ]),
                                                                   )
                                                                   .toList(),
@@ -760,7 +755,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                             ],
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 40.0, 10.0, 0.0, 10.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -813,14 +808,14 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                           snapshot.data!;
 
                                       return Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: SingleChildScrollView(
                                           scrollDirection: Axis.horizontal,
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         10.0, 0.0, 0.0, 0.0),
                                                 child: FlutterFlowChoiceChips(
@@ -938,7 +933,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                           snapshot.data!;
 
                                       return Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -960,7 +955,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                       .buscando ==
                                                                   false)
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           10.0,
@@ -986,7 +981,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                             final todoItem =
                                                                                 todo[todoIndex];
                                                                             return Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                                                                               child: Row(
                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                 children: [
@@ -1065,9 +1060,9 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                             children: [
                                                                                               Expanded(
                                                                                                 child: Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                                                                                                   child: Container(
-                                                                                                    decoration: BoxDecoration(
+                                                                                                    decoration: const BoxDecoration(
                                                                                                       borderRadius: BorderRadius.only(
                                                                                                         bottomLeft: Radius.circular(0.0),
                                                                                                         bottomRight: Radius.circular(50.0),
@@ -1107,7 +1102,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                                               width: 120.0,
                                                                                                               height: 120.0,
                                                                                                               clipBehavior: Clip.antiAlias,
-                                                                                                              decoration: BoxDecoration(
+                                                                                                              decoration: const BoxDecoration(
                                                                                                                 shape: BoxShape.circle,
                                                                                                               ),
                                                                                                               child: Image.network(
@@ -1119,7 +1114,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                                         ),
                                                                                                         Expanded(
                                                                                                           child: Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
                                                                                                             child: SingleChildScrollView(
                                                                                                               child: Column(
                                                                                                                 mainAxisSize: MainAxisSize.max,
@@ -1208,8 +1203,8 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                 ],
                                                                               ),
                                                                             );
-                                                                          }).divide(SizedBox(height: 20.0)).addToStart(SizedBox(height: 10.0)).addToEnd(
-                                                                              SizedBox(height: 20.0)),
+                                                                          }).divide(const SizedBox(height: 20.0)).addToStart(const SizedBox(height: 10.0)).addToEnd(
+                                                                              const SizedBox(height: 20.0)),
                                                                         ),
                                                                       );
                                                                     },
@@ -1219,7 +1214,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                       .buscando ==
                                                                   true)
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           10.0,
@@ -1246,7 +1241,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                             final todoItem =
                                                                                 todo[todoIndex];
                                                                             return Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                                                                               child: Row(
                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                 children: [
@@ -1325,9 +1320,9 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                             children: [
                                                                                               Expanded(
                                                                                                 child: Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                                                                                                   child: Container(
-                                                                                                    decoration: BoxDecoration(
+                                                                                                    decoration: const BoxDecoration(
                                                                                                       borderRadius: BorderRadius.only(
                                                                                                         bottomLeft: Radius.circular(0.0),
                                                                                                         bottomRight: Radius.circular(50.0),
@@ -1367,7 +1362,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                                               width: 120.0,
                                                                                                               height: 120.0,
                                                                                                               clipBehavior: Clip.antiAlias,
-                                                                                                              decoration: BoxDecoration(
+                                                                                                              decoration: const BoxDecoration(
                                                                                                                 shape: BoxShape.circle,
                                                                                                               ),
                                                                                                               child: Image.network(
@@ -1379,7 +1374,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                                         ),
                                                                                                         Expanded(
                                                                                                           child: Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
                                                                                                             child: SingleChildScrollView(
                                                                                                               child: Column(
                                                                                                                 mainAxisSize: MainAxisSize.max,
@@ -1468,8 +1463,8 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                 ],
                                                                               ),
                                                                             );
-                                                                          }).divide(SizedBox(height: 20.0)).addToStart(SizedBox(height: 10.0)).addToEnd(
-                                                                              SizedBox(height: 20.0)),
+                                                                          }).divide(const SizedBox(height: 20.0)).addToStart(const SizedBox(height: 10.0)).addToEnd(
+                                                                              const SizedBox(height: 20.0)),
                                                                         ),
                                                                       );
                                                                     },
@@ -1495,7 +1490,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                       .buscando ==
                                                                   false)
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           10.0,
@@ -1521,7 +1516,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                             return Visibility(
                                                                               visible: todoItem.categoria == _model.categoriasValue,
                                                                               child: Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                                                                                 child: Row(
                                                                                   mainAxisSize: MainAxisSize.max,
                                                                                   children: [
@@ -1600,9 +1595,9 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                               children: [
                                                                                                 Expanded(
                                                                                                   child: Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                                                                                                     child: Container(
-                                                                                                      decoration: BoxDecoration(
+                                                                                                      decoration: const BoxDecoration(
                                                                                                         borderRadius: BorderRadius.only(
                                                                                                           bottomLeft: Radius.circular(0.0),
                                                                                                           bottomRight: Radius.circular(50.0),
@@ -1642,7 +1637,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                                                 width: 120.0,
                                                                                                                 height: 120.0,
                                                                                                                 clipBehavior: Clip.antiAlias,
-                                                                                                                decoration: BoxDecoration(
+                                                                                                                decoration: const BoxDecoration(
                                                                                                                   shape: BoxShape.circle,
                                                                                                                 ),
                                                                                                                 child: Image.network(
@@ -1654,7 +1649,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                                           ),
                                                                                                           Expanded(
                                                                                                             child: Padding(
-                                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
+                                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
                                                                                                               child: SingleChildScrollView(
                                                                                                                 child: Column(
                                                                                                                   mainAxisSize: MainAxisSize.max,
@@ -1746,14 +1741,14 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                             );
                                                                           })
                                                                               .divide(
-                                                                                SizedBox(height: 20.0),
+                                                                                const SizedBox(height: 20.0),
                                                                                 filterFn: (todoIndex) {
                                                                                   final todoItem = todo[todoIndex];
                                                                                   return todoItem.categoria == _model.categoriasValue;
                                                                                 },
                                                                               )
-                                                                              .addToStart(SizedBox(height: 10.0))
-                                                                              .addToEnd(SizedBox(height: 20.0)),
+                                                                              .addToStart(const SizedBox(height: 10.0))
+                                                                              .addToEnd(const SizedBox(height: 20.0)),
                                                                         ),
                                                                       );
                                                                     },
@@ -1763,7 +1758,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                       .buscando ==
                                                                   true)
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           10.0,
@@ -1790,7 +1785,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                             return Visibility(
                                                                               visible: todoItem.categoria == _model.categoriasValue,
                                                                               child: Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                                                                                 child: Row(
                                                                                   mainAxisSize: MainAxisSize.max,
                                                                                   children: [
@@ -1869,9 +1864,9 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                               children: [
                                                                                                 Expanded(
                                                                                                   child: Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                                                                                                     child: Container(
-                                                                                                      decoration: BoxDecoration(
+                                                                                                      decoration: const BoxDecoration(
                                                                                                         borderRadius: BorderRadius.only(
                                                                                                           bottomLeft: Radius.circular(0.0),
                                                                                                           bottomRight: Radius.circular(50.0),
@@ -1911,7 +1906,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                                                 width: 120.0,
                                                                                                                 height: 120.0,
                                                                                                                 clipBehavior: Clip.antiAlias,
-                                                                                                                decoration: BoxDecoration(
+                                                                                                                decoration: const BoxDecoration(
                                                                                                                   shape: BoxShape.circle,
                                                                                                                 ),
                                                                                                                 child: Image.network(
@@ -1923,7 +1918,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                                           ),
                                                                                                           Expanded(
                                                                                                             child: Padding(
-                                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
+                                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
                                                                                                               child: SingleChildScrollView(
                                                                                                                 child: Column(
                                                                                                                   mainAxisSize: MainAxisSize.max,
@@ -2015,14 +2010,14 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                             );
                                                                           })
                                                                               .divide(
-                                                                                SizedBox(height: 20.0),
+                                                                                const SizedBox(height: 20.0),
                                                                                 filterFn: (todoIndex) {
                                                                                   final todoItem = todo[todoIndex];
                                                                                   return todoItem.categoria == _model.categoriasValue;
                                                                                 },
                                                                               )
-                                                                              .addToStart(SizedBox(height: 10.0))
-                                                                              .addToEnd(SizedBox(height: 20.0)),
+                                                                              .addToStart(const SizedBox(height: 10.0))
+                                                                              .addToEnd(const SizedBox(height: 20.0)),
                                                                         ),
                                                                       );
                                                                     },
@@ -2069,7 +2064,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                           snapshot.data!;
 
                                       return Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -2089,7 +2084,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                           Expanded(
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           10.0,
@@ -2116,7 +2111,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                         final todoItem =
                                                                             todo[todoIndex];
                                                                         return Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               10.0,
                                                                               0.0,
                                                                               10.0,
@@ -2201,9 +2196,9 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                         children: [
                                                                                           Expanded(
                                                                                             child: Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                                                                                               child: Container(
-                                                                                                decoration: BoxDecoration(
+                                                                                                decoration: const BoxDecoration(
                                                                                                   borderRadius: BorderRadius.only(
                                                                                                     bottomLeft: Radius.circular(0.0),
                                                                                                     bottomRight: Radius.circular(50.0),
@@ -2243,7 +2238,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                                           width: 120.0,
                                                                                                           height: 120.0,
                                                                                                           clipBehavior: Clip.antiAlias,
-                                                                                                          decoration: BoxDecoration(
+                                                                                                          decoration: const BoxDecoration(
                                                                                                             shape: BoxShape.circle,
                                                                                                           ),
                                                                                                           child: Image.network(
@@ -2255,7 +2250,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                                     ),
                                                                                                     Expanded(
                                                                                                       child: Padding(
-                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
+                                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
                                                                                                         child: SingleChildScrollView(
                                                                                                           child: Column(
                                                                                                             mainAxisSize: MainAxisSize.max,
@@ -2344,7 +2339,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                             ],
                                                                           ),
                                                                         );
-                                                                      }).divide(SizedBox(height: 20.0)).addToStart(SizedBox(height: 10.0)).addToEnd(SizedBox(
+                                                                      }).divide(const SizedBox(height: 20.0)).addToStart(const SizedBox(height: 10.0)).addToEnd(const SizedBox(
                                                                           height:
                                                                               20.0)),
                                                                     ),
@@ -2358,7 +2353,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                           Expanded(
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           10.0,
@@ -2386,7 +2381,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                         final todoItem =
                                                                             todo[todoIndex];
                                                                         return Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               10.0,
                                                                               0.0,
                                                                               10.0,
@@ -2471,9 +2466,9 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                         children: [
                                                                                           Expanded(
                                                                                             child: Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                                                                                               child: Container(
-                                                                                                decoration: BoxDecoration(
+                                                                                                decoration: const BoxDecoration(
                                                                                                   borderRadius: BorderRadius.only(
                                                                                                     bottomLeft: Radius.circular(0.0),
                                                                                                     bottomRight: Radius.circular(50.0),
@@ -2513,7 +2508,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                                           width: 120.0,
                                                                                                           height: 120.0,
                                                                                                           clipBehavior: Clip.antiAlias,
-                                                                                                          decoration: BoxDecoration(
+                                                                                                          decoration: const BoxDecoration(
                                                                                                             shape: BoxShape.circle,
                                                                                                           ),
                                                                                                           child: Image.network(
@@ -2525,7 +2520,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                                     ),
                                                                                                     Expanded(
                                                                                                       child: Padding(
-                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
+                                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
                                                                                                         child: SingleChildScrollView(
                                                                                                           child: Column(
                                                                                                             mainAxisSize: MainAxisSize.max,
@@ -2614,7 +2609,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                             ],
                                                                           ),
                                                                         );
-                                                                      }).divide(SizedBox(height: 20.0)).addToStart(SizedBox(height: 10.0)).addToEnd(SizedBox(
+                                                                      }).divide(const SizedBox(height: 20.0)).addToStart(const SizedBox(height: 10.0)).addToEnd(const SizedBox(
                                                                           height:
                                                                               20.0)),
                                                                     ),
@@ -2663,7 +2658,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                               todoItem.categoria == _model.categoriasValue,
                                                                           child:
                                                                               Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 10.0,
                                                                                 0.0,
                                                                                 10.0,
@@ -2747,9 +2742,9 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                           children: [
                                                                                             Expanded(
                                                                                               child: Padding(
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                                                                                                 child: Container(
-                                                                                                  decoration: BoxDecoration(
+                                                                                                  decoration: const BoxDecoration(
                                                                                                     borderRadius: BorderRadius.only(
                                                                                                       bottomLeft: Radius.circular(0.0),
                                                                                                       bottomRight: Radius.circular(50.0),
@@ -2789,7 +2784,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                                             width: 120.0,
                                                                                                             height: 120.0,
                                                                                                             clipBehavior: Clip.antiAlias,
-                                                                                                            decoration: BoxDecoration(
+                                                                                                            decoration: const BoxDecoration(
                                                                                                               shape: BoxShape.circle,
                                                                                                             ),
                                                                                                             child: Image.network(
@@ -2801,7 +2796,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                                       ),
                                                                                                       Expanded(
                                                                                                         child: Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
                                                                                                           child: SingleChildScrollView(
                                                                                                             child: Column(
                                                                                                               mainAxisSize: MainAxisSize.max,
@@ -2893,18 +2888,18 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                         );
                                                                       })
                                                                           .divide(
-                                                                            SizedBox(height: 20.0),
+                                                                            const SizedBox(height: 20.0),
                                                                             filterFn:
                                                                                 (todoIndex) {
                                                                               final todoItem = todo[todoIndex];
                                                                               return todoItem.categoria == _model.categoriasValue;
                                                                             },
                                                                           )
-                                                                          .addToStart(SizedBox(
+                                                                          .addToStart(const SizedBox(
                                                                               height:
                                                                                   10.0))
                                                                           .addToEnd(
-                                                                              SizedBox(height: 20.0)),
+                                                                              const SizedBox(height: 20.0)),
                                                                     ),
                                                                   );
                                                                 },
@@ -2914,7 +2909,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                 true)
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             10.0,
@@ -2943,7 +2938,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                 todoItem.categoria == _model.categoriasValue,
                                                                             child:
                                                                                 Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                                                                               child: Row(
                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                 children: [
@@ -3022,9 +3017,9 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                             children: [
                                                                                               Expanded(
                                                                                                 child: Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                                                                                                   child: Container(
-                                                                                                    decoration: BoxDecoration(
+                                                                                                    decoration: const BoxDecoration(
                                                                                                       borderRadius: BorderRadius.only(
                                                                                                         bottomLeft: Radius.circular(0.0),
                                                                                                         bottomRight: Radius.circular(50.0),
@@ -3064,7 +3059,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                                               width: 120.0,
                                                                                                               height: 120.0,
                                                                                                               clipBehavior: Clip.antiAlias,
-                                                                                                              decoration: BoxDecoration(
+                                                                                                              decoration: const BoxDecoration(
                                                                                                                 shape: BoxShape.circle,
                                                                                                               ),
                                                                                                               child: Image.network(
@@ -3076,7 +3071,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                                                         ),
                                                                                                         Expanded(
                                                                                                           child: Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
                                                                                                             child: SingleChildScrollView(
                                                                                                               child: Column(
                                                                                                                 mainAxisSize: MainAxisSize.max,
@@ -3168,14 +3163,14 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                                           );
                                                                         })
                                                                             .divide(
-                                                                              SizedBox(height: 20.0),
+                                                                              const SizedBox(height: 20.0),
                                                                               filterFn: (todoIndex) {
                                                                                 final todoItem = todo[todoIndex];
                                                                                 return todoItem.categoria == _model.categoriasValue;
                                                                               },
                                                                             )
-                                                                            .addToStart(SizedBox(height: 10.0))
-                                                                            .addToEnd(SizedBox(height: 20.0)),
+                                                                            .addToStart(const SizedBox(height: 10.0))
+                                                                            .addToEnd(const SizedBox(height: 20.0)),
                                                                       ),
                                                                     );
                                                                   },

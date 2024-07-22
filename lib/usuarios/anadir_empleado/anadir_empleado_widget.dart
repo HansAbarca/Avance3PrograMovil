@@ -1,12 +1,10 @@
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'anadir_empleado_model.dart';
@@ -193,7 +191,7 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
       child: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0xFFE8E8F4),
           borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(40.0),
@@ -208,7 +206,7 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
             Stack(
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -216,7 +214,7 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                       if (FFAppState().anadirEmpleadoConfirmacion == false)
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 60.0, 0.0, 60.0, 0.0),
                             child: Text(
                               'Añadir empleado',
@@ -251,7 +249,7 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                       if (FFAppState().anadirEmpleadoConfirmacion == true)
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 60.0, 0.0, 60.0, 0.0),
                             child: Text(
                               'Empleado añadido con exito!',
@@ -287,7 +285,7 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 30.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 30.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -303,7 +301,7 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                             setState(() {});
                             Navigator.pop(context);
                           },
-                          child: Icon(
+                          child: const Icon(
                             Icons.clear,
                             color: Colors.black,
                             size: 40.0,
@@ -317,7 +315,7 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
             if (FFAppState().anadirEmpleadoConfirmacion == false)
               Expanded(
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 20.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 20.0),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -390,7 +388,7 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                                   decoration: BoxDecoration(
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
-                                    borderRadius: BorderRadius.only(
+                                    borderRadius: const BorderRadius.only(
                                       bottomLeft: Radius.circular(50.0),
                                       bottomRight: Radius.circular(50.0),
                                       topLeft: Radius.circular(50.0),
@@ -593,7 +591,7 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                                   decoration: BoxDecoration(
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
-                                    borderRadius: BorderRadius.only(
+                                    borderRadius: const BorderRadius.only(
                                       bottomLeft: Radius.circular(50.0),
                                       bottomRight: Radius.circular(50.0),
                                       topLeft: Radius.circular(50.0),
@@ -804,7 +802,7 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                                             return 124.0;
                                           }
                                         }(),
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           color: Color(0xFF00B821),
                                           borderRadius: BorderRadius.only(
                                             bottomLeft: Radius.circular(50.0),
@@ -879,9 +877,9 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                           ],
                         ),
                       ]
-                          .divide(SizedBox(height: 30.0))
-                          .addToStart(SizedBox(height: 15.0))
-                          .addToEnd(SizedBox(height: 30.0)),
+                          .divide(const SizedBox(height: 30.0))
+                          .addToStart(const SizedBox(height: 15.0))
+                          .addToEnd(const SizedBox(height: 30.0)),
                     ),
                   ),
                 ),
@@ -893,9 +891,9 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0.0, -1.0),
+                        alignment: const AlignmentDirectional(0.0, -1.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 20.0, 0.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -903,7 +901,7 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                             children: [
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       30.0, 0.0, 30.0, 0.0),
                                   child: Text(
                                     'Advertencia: Por la naturaleza de los datos, esta información será visible solo una vez, al darle \"Aceptar\" o cerrar esta pestaña se perderá el acceso a esta información.',
@@ -912,7 +910,7 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                                         .bodySmall
                                         .override(
                                           fontFamily: 'Readex Pro',
-                                          color: Color(0xFFD13434),
+                                          color: const Color(0xFFD13434),
                                           fontSize: () {
                                             if (MediaQuery.sizeOf(context)
                                                     .width <
@@ -945,14 +943,14 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Align(
-                            alignment: AlignmentDirectional(0.0, -1.0),
+                            alignment: const AlignmentDirectional(0.0, -1.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Expanded(
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         30.0, 0.0, 30.0, 0.0),
                                     child: Text(
                                       'Empleado ID: ',
@@ -979,7 +977,7 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                             onTap: () async {
                               await Clipboard.setData(ClipboardData(
                                   text: valueOrDefault<String>(
-                                widget!.idEmpleado,
+                                widget.idEmpleado,
                                 'error',
                               )));
                             },
@@ -988,11 +986,11 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 15.0, 0.0, 0.0),
                                   child: Text(
                                     valueOrDefault<String>(
-                                      widget!.idEmpleado,
+                                      widget.idEmpleado,
                                       'error',
                                     ),
                                     textAlign: TextAlign.center,
@@ -1008,9 +1006,9 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         15.0, 15.0, 0.0, 0.0),
                                     child: Icon(
                                       Icons.content_copy,
@@ -1029,14 +1027,14 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Align(
-                            alignment: AlignmentDirectional(0.0, -1.0),
+                            alignment: const AlignmentDirectional(0.0, -1.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Expanded(
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         30.0, 0.0, 30.0, 0.0),
                                     child: Text(
                                       'Nombre del Empleado: ',
@@ -1055,9 +1053,9 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, -1.0),
+                            alignment: const AlignmentDirectional(0.0, -1.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 15.0, 0.0, 0.0),
                               child: InkWell(
                                 splashColor: Colors.transparent,
@@ -1092,9 +1090,9 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                                           ),
                                     ),
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             15.0, 0.0, 0.0, 0.0),
                                         child: Icon(
                                           Icons.content_copy,
@@ -1115,14 +1113,14 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Align(
-                            alignment: AlignmentDirectional(0.0, -1.0),
+                            alignment: const AlignmentDirectional(0.0, -1.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Expanded(
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         10.0, 0.0, 10.0, 0.0),
                                     child: Text(
                                       'Correo de inicio de sesión: ',
@@ -1141,7 +1139,7 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 15.0, 0.0, 0.0),
                             child: InkWell(
                               splashColor: Colors.transparent,
@@ -1176,9 +1174,9 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                                         ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           15.0, 0.0, 0.0, 0.0),
                                       child: Icon(
                                         Icons.content_copy,
@@ -1198,7 +1196,7 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Align(
-                            alignment: AlignmentDirectional(0.0, -1.0),
+                            alignment: const AlignmentDirectional(0.0, -1.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -1225,7 +1223,7 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                             onTap: () async {
                               await Clipboard.setData(ClipboardData(
                                   text: valueOrDefault<String>(
-                                widget!.contrasena,
+                                widget.contrasena,
                                 'error',
                               )));
                             },
@@ -1234,11 +1232,11 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 15.0, 0.0, 0.0),
                                   child: Text(
                                     valueOrDefault<String>(
-                                      widget!.contrasena,
+                                      widget.contrasena,
                                       'error',
                                     ),
                                     textAlign: TextAlign.center,
@@ -1254,9 +1252,9 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         15.0, 15.0, 0.0, 0.0),
                                     child: Icon(
                                       Icons.content_copy,
@@ -1295,7 +1293,7 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                             }
                           }(),
                           height: 58.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Color(0xFF00B821),
                             boxShadow: [
                               BoxShadow(
@@ -1333,9 +1331,9 @@ class _AnadirEmpleadoWidgetState extends State<AnadirEmpleadoWidget>
                         ),
                       ),
                     ]
-                        .divide(SizedBox(height: 30.0))
-                        .addToStart(SizedBox(height: 10.0))
-                        .addToEnd(SizedBox(height: 20.0)),
+                        .divide(const SizedBox(height: 30.0))
+                        .addToStart(const SizedBox(height: 10.0))
+                        .addToEnd(const SizedBox(height: 20.0)),
                   ),
                 ),
               ),

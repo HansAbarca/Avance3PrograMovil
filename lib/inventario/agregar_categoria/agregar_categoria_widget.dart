@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'agregar_categoria_model.dart';
 export 'agregar_categoria_model.dart';
 
@@ -138,9 +136,9 @@ class _AgregarCategoriaWidgetState extends State<AgregarCategoriaWidget> {
                   Stack(
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0.0, -1.0),
+                        alignment: const AlignmentDirectional(0.0, -1.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 20.0, 0.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -148,7 +146,7 @@ class _AgregarCategoriaWidgetState extends State<AgregarCategoriaWidget> {
                             children: [
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       30.0, 0.0, 30.0, 0.0),
                                   child: Text(
                                     'Ingresa nombre de categoría',
@@ -168,7 +166,7 @@ class _AgregarCategoriaWidgetState extends State<AgregarCategoriaWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             0.0, 30.0, 20.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -182,7 +180,7 @@ class _AgregarCategoriaWidgetState extends State<AgregarCategoriaWidget> {
                               onTap: () async {
                                 Navigator.pop(context);
                               },
-                              child: Icon(
+                              child: const Icon(
                                 Icons.clear,
                                 color: Colors.black,
                                 size: 40.0,
@@ -195,7 +193,7 @@ class _AgregarCategoriaWidgetState extends State<AgregarCategoriaWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -216,7 +214,7 @@ class _AgregarCategoriaWidgetState extends State<AgregarCategoriaWidget> {
                             }
                           }(),
                           height: 58.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Color(0xFFEAE7E7),
                             boxShadow: [
                               BoxShadow(
@@ -236,7 +234,7 @@ class _AgregarCategoriaWidgetState extends State<AgregarCategoriaWidget> {
                             ),
                           ),
                           child: Stack(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             children: [
                               Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -245,7 +243,7 @@ class _AgregarCategoriaWidgetState extends State<AgregarCategoriaWidget> {
                                 children: [
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           15.0, 0.0, 0.0, 0.0),
                                       child: TextFormField(
                                         controller:
@@ -289,7 +287,7 @@ class _AgregarCategoriaWidgetState extends State<AgregarCategoriaWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 20.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
@@ -320,7 +318,7 @@ class _AgregarCategoriaWidgetState extends State<AgregarCategoriaWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -341,7 +339,7 @@ class _AgregarCategoriaWidgetState extends State<AgregarCategoriaWidget> {
                             }
                           }(),
                           height: 58.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Color(0xFF00B821),
                             boxShadow: [
                               BoxShadow(

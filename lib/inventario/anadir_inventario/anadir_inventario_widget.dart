@@ -5,13 +5,9 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/flutter_flow/upload_data.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'anadir_inventario_model.dart';
 export 'anadir_inventario_model.dart';
 
@@ -223,7 +219,7 @@ class _AnadirInventarioWidgetState extends State<AnadirInventarioWidget>
       child: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0xFFE8E8F4),
           borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(40.0),
@@ -238,14 +234,14 @@ class _AnadirInventarioWidgetState extends State<AnadirInventarioWidget>
             Stack(
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Expanded(
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               60.0, 0.0, 60.0, 0.0),
                           child: Text(
                             'Añadir al Inventario',
@@ -281,7 +277,7 @@ class _AnadirInventarioWidgetState extends State<AnadirInventarioWidget>
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 30.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 30.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -296,7 +292,7 @@ class _AnadirInventarioWidgetState extends State<AnadirInventarioWidget>
                           setState(() {});
                           Navigator.pop(context);
                         },
-                        child: Icon(
+                        child: const Icon(
                           Icons.clear,
                           color: Colors.black,
                           size: 40.0,
@@ -309,7 +305,7 @@ class _AnadirInventarioWidgetState extends State<AnadirInventarioWidget>
             ),
             Expanded(
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 20.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 20.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -380,7 +376,7 @@ class _AnadirInventarioWidgetState extends State<AnadirInventarioWidget>
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  borderRadius: BorderRadius.only(
+                                  borderRadius: const BorderRadius.only(
                                     bottomLeft: Radius.circular(50.0),
                                     bottomRight: Radius.circular(50.0),
                                     topLeft: Radius.circular(50.0),
@@ -572,7 +568,7 @@ class _AnadirInventarioWidgetState extends State<AnadirInventarioWidget>
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  borderRadius: BorderRadius.only(
+                                  borderRadius: const BorderRadius.only(
                                     bottomLeft: Radius.circular(50.0),
                                     bottomRight: Radius.circular(50.0),
                                     topLeft: Radius.circular(50.0),
@@ -765,7 +761,7 @@ class _AnadirInventarioWidgetState extends State<AnadirInventarioWidget>
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  borderRadius: BorderRadius.only(
+                                  borderRadius: const BorderRadius.only(
                                     bottomLeft: Radius.circular(50.0),
                                     bottomRight: Radius.circular(50.0),
                                     topLeft: Radius.circular(50.0),
@@ -963,7 +959,7 @@ class _AnadirInventarioWidgetState extends State<AnadirInventarioWidget>
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  borderRadius: BorderRadius.only(
+                                  borderRadius: const BorderRadius.only(
                                     bottomLeft: Radius.circular(50.0),
                                     bottomRight: Radius.circular(50.0),
                                     topLeft: Radius.circular(50.0),
@@ -1242,7 +1238,7 @@ class _AnadirInventarioWidgetState extends State<AnadirInventarioWidget>
                                                 MainAxisAlignment.center,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         10.0, 0.0, 10.0, 0.0),
                                                 child: FlutterFlowChoiceChips(
@@ -1461,7 +1457,7 @@ class _AnadirInventarioWidgetState extends State<AnadirInventarioWidget>
                                       },
                                       child: Container(
                                         width: 316.0,
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -1505,7 +1501,7 @@ class _AnadirInventarioWidgetState extends State<AnadirInventarioWidget>
                                                         ?.isEmpty ??
                                                     true))
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         10.0, 0.0, 0.0, 0.0),
                                                 child: Icon(
@@ -1525,7 +1521,7 @@ class _AnadirInventarioWidgetState extends State<AnadirInventarioWidget>
                                                 ?.isNotEmpty ??
                                             false))
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 10.0),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
@@ -1707,7 +1703,7 @@ class _AnadirInventarioWidgetState extends State<AnadirInventarioWidget>
                                     return 124.0;
                                   }
                                 }(),
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0xFF00B821),
                                   borderRadius: BorderRadius.only(
                                     bottomLeft: Radius.circular(50.0),
@@ -1761,9 +1757,9 @@ class _AnadirInventarioWidgetState extends State<AnadirInventarioWidget>
                         ],
                       ),
                     ]
-                        .divide(SizedBox(height: 30.0))
-                        .addToStart(SizedBox(height: 15.0))
-                        .addToEnd(SizedBox(height: 30.0)),
+                        .divide(const SizedBox(height: 30.0))
+                        .addToStart(const SizedBox(height: 15.0))
+                        .addToEnd(const SizedBox(height: 30.0)),
                   ),
                 ),
               ),
