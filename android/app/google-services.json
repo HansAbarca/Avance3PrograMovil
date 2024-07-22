@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "195613398731",
+    "project_id": "avance-3-szuoec",
+    "storage_bucket": "avance-3-szuoec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195613398731:android:38b92f7208baca4192ad4e",
+        "android_client_info": {
+          "package_name": "com.tesis.sistemagestiondepiscinas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "195613398731-q2vdeqtk1u3d54niqdb5v4fjp41ohpmt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tesis.sistemagestiondepiscinas",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "195613398731-k2uobqco5p9t9jvcje640rrp8jujqp71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBulW2MT632a0jRe2WHM7rejQPf4q6lfe4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "195613398731-k2uobqco5p9t9jvcje640rrp8jujqp71.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "195613398731-psojf3icnq3850dalol44uvi3o35fhk7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tesis.sistemagestiondepiscinas"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
